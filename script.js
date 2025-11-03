@@ -25,7 +25,7 @@ function playNextSong()
         const recordIcon = document.querySelector("#recordIcon");
 
         playlist[songPlaying].play();
-        
+        recordIcon
         nowPlayingText.textContent = songNameList[songPlaying];
             
         playlist[songPlaying].addEventListener("ended", () => { songPlaying++; playNextSong(); });
